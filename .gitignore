@@ -1,0 +1,50 @@
+# ----------------------------------------
+# 1. ENTORNO VIRTUAL (VENV)
+# ----------------------------------------
+# Ignora la carpeta del entorno virtual que contiene todas las librerías
+# La carpeta se llama comúnmente '.venv', 'venv' o 'env'
+.venv/
+venv/
+env/
+*.pyc
+
+# ----------------------------------------
+# 2. PYTHON E ARCHIVOS DE CACHÉ
+# ----------------------------------------
+# Archivos de caché de Python
+__pycache__/
+
+# Archivos de distribución y compilación
+*.egg-info/
+dist/
+build/
+
+# Ignora los logs o archivos de datos grandes si los tienes
+*.log
+*.sqlite
+
+# ----------------------------------------
+# 3. WEBSCRAPPING Y DATOS
+# ----------------------------------------
+# Archivos de salida comunes de scrapping (si los generas)
+# Ajusta esto si usas un nombre diferente
+data/
+output.csv
+scraped_data.json
+resultados.txt
+
+# ----------------------------------------
+# 4. ARCHIVOS DE USUARIO Y CONFIGURACIÓN
+# ----------------------------------------
+# Ignorar archivos de configuración local o secretos
+.env
+.flaskenv
+
+# ----------------------------------------
+# 5. INTEGRACIÓN CON EDITORES COMUNES
+# ----------------------------------------
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
