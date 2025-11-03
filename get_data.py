@@ -24,13 +24,11 @@ try:
     print(f"Noticias del día: {fecha.get_text(strip=True)}\n{noticia.get_text(strip=True)}") #ponemos el strip true para que quite los espacios
     #en blanco al inicio y al final y los dobles saltos de linea
     
-
-
-except requests.RequestException as e:
-    print("Error en la petición , no se ha encontrado la url")
 except AttributeError as e:
     print("Error al encontrar el elemento")
-except ModuleNotFoundError as e:
-    print("Módulo no encontrado: live server no activado", e)
+except requests.exceptions.ConnectionError as e:
+    print("Error Live server no activado")
+except requests.exceptions.HTTPError as e:
+    print("Respuestas HTTP no exitosas")
 except Exception as e:
     print("Error inesperado:", e)
