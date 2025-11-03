@@ -1,7 +1,6 @@
 #autor : Maria Chaparro 
 # git : MChaparroCaballero
 import os
-import sys
 import requests  # Librería para hacer peticiones HTTP
 from bs4 import BeautifulSoup  # Librería para analizar HTML
 from bs4.element import Tag  # Tipo para elementos HTML
