@@ -113,6 +113,12 @@
             margin-bottom: 5px;
         }
         
+        /* ESTILO AÑADIDO/MODIFICADO PARA EL NUEVO FORMATO */
+        .fecha .separador {
+            margin: 0 5px; /* Crea el espacio alrededor del "|" para separación */
+        }
+        /* FIN DEL ESTILO AÑADIDO */
+
         /* Sección Lateral */
         .sidebar h3 {
             color: #333;
@@ -161,8 +167,13 @@
             
             <section id="nacional">
                 <div class="noticia-principal">
-                    <h2>🚨 Exclusiva: El Gobierno Anuncia Histórica Reforma Educativa</h2>
-                    <span class="fecha">NACIONAL | 30 de Octubre de 2025</span>
+                    <h2 id="titulo-exclusiva">🚨 Exclusiva: El Gobierno Anuncia Histórica Reforma Educativa</h2>
+                    
+                    <span class="fecha">
+                        <span class="categoria-noticia">NACIONAL</span>
+                        <span class="separador">|</span>
+                        <span id="fecha-exclusiva">30 de Octubre de 2025</span>
+                    </span>
                     <p id="exclusiva-diaria">Tras meses de debates, el Congreso aprueba un paquete de medidas que transformarán el sistema educativo del país. La reforma incluye la digitalización de aulas y la capacitación de miles de maestros. Los detalles de la implementación serán revelados mañana.</p>
                     <a href="#" style="color: #cc0000; font-weight: bold;">[AMPLIAR INFORMACIÓN]</a>
                 </div>

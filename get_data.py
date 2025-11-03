@@ -15,13 +15,15 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 try:
 
-    #primero hacemos la peticion y obtenemos el contenido HTML de toda la pagina
+    #primero hacemos la peticion y obtenemos el contenido HTML de toda la pagina con requests y lo parseamos con BeautifulSoup
     soup = BeautifulSoup(requests.get(url).text, "html.parser")
     #luego buscamos el elemento por su id y lo casteamos para que no de error
-    el= cast(Tag,soup.find(id="exclusiva-diaria"))
+    noticia= cast(Tag,soup.find(id="titulo-exclusiva"))
+    fecha= cast(Tag,soup.find(id="fecha-exclusiva"))
     #finalmente imprimimos el texto del elemento encontrado
-    print(f"Noticia de ultima hora: {el.get_text(strip=True)}") #ponemos el strip true para que quite los espacios
+    print(f"Noticias del día: {fecha.get_text(strip=True)}\n{noticia.get_text(strip=True)}") #ponemos el strip true para que quite los espacios
     #en blanco al inicio y al final y los dobles saltos de linea
+    
 
 
 except requests.RequestException as e:
