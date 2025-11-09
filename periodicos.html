@@ -57,14 +57,13 @@
             text-decoration: none;
             color: white;
             font-weight: bold;
-            transition: background-color 0.3s;
         }
         nav ul li a:hover {
             background-color: #cc0000;
         }
         
         /* Contenedor Principal */
-        .container {
+        .contenedor {
             width: 90%;
             max-width: 1200px;
             margin: 20px auto;
@@ -72,15 +71,15 @@
             gap: 20px; 
         }
 
-        /* Columna de Noticias (Principal) */
-        .main-content {
+        /*Columna de Noticias*/
+        .parte-principal {
             flex: 3; 
             background-color: white;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Columna Lateral (Secundaria) */
+        /*Columna Lateral*/
         .sidebar {
             flex: 1; 
             background-color: #f9f9f9;
@@ -89,7 +88,7 @@
             border-left: 1px dashed #ccc;
         }
         
-        /* titulo de noticia */
+        /*titulo de noticia*/
         .noticia-principal h2 {
             color: #cc0000;
             font-size: 2.2em;
@@ -117,11 +116,11 @@
         
       
         .fecha .separador {
-            margin: 0 5px; /* Crea el espacio alrededor del "|" para separación */
+            margin: 0 5px; 
         }
         
 
-        /* Sección Lateral de ultimas horas */
+        /*Sección Lateral de ultimas horas*/
 
         .sidebar h3 {
             color: #333;
@@ -164,9 +163,9 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="contenedor">
         
-        <div class="main-content">
+        <div class="parte-principal">
             
             <section id="nacional">
                 <div class="noticia-principal">
